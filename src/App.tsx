@@ -1,17 +1,17 @@
 import "./app.css";
-import { Button } from "@/components/ui/button";
 import Navbar from "./components/custom/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import PomodoroTimer from "./components/custom/pomodoro-timer";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="px-32">
+      <main className="px-32">
         <Navbar />
-        <div>
-          <Button>Click me</Button>
-        </div>
-      </div>
+        <section className="flex flex-col items-center mt-10">
+          <PomodoroTimer />
+        </section>
+      </main>
     </ThemeProvider>
   );
 }
