@@ -65,7 +65,7 @@ function PomodoroTimer() {
   }, [currentType, isStartTimer, time]);
 
   return (
-    <Card className="w-[30em] p-4">
+    <Card className="w-[35em] p-4">
       <CardContent>
         <div className="flex flex-row justify-evenly gap-2">
           <Button variant="ghost" onClick={() => setTimer("pomodoro")}>
